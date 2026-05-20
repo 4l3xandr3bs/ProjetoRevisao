@@ -7,18 +7,18 @@
 <body>
     <h2>Cadastro de Usuário</h2>
 
-<form th:action="@{}" th:object="${usuario}" method="post">
+<form th:action="@{/usuarioCTR/salvarUsuario}" th:object="${usuario}" method="post">
 
     <label>Nome:</label>
     <input type="text" th:field="*{nome}" required />
     <br><br>
 
     <label>Telefone:</label>
-    <input type="number" th:field="*{telefne}" />
+    <input type="number" th:field="*{telefone}" />
     <br><br>
 
     <label>Username:</label>
-    <input type="text" th:field="*{userename}" required />
+    <input type="text" th:field="*{username}" required />
     <br><br>
 
     <label>Senha:</label>

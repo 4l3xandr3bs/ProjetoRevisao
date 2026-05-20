@@ -1,4 +1,4 @@
-package com.revisaospring.springbasic.SecrityConfig;
+package com.revisaospring.springbasic.SecurityConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,7 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-public class SeuritbenesCobonfig {
+public class SecurityBeansConfig {
     
     @Bean
     public PasswordEncoder passwordEncoder(){

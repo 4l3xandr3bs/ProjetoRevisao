@@ -22,8 +22,8 @@ public class Usuario {
     @Column(name = "nome", nullable = false, length = 50)
     private String nome;
 
-    @Column(name = "telefne", nullable = false, length = 50)
-    private int telefne;
+    @Column(name = "telefone", nullable = false, length = 50)
+    private int telefone;
     
     @Column(name = "username", nullable = false, length = 50)
     private String username;
@@ -39,10 +39,10 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(long id, String nome, int telefne, String username, String password, String role) {
+    public Usuario(long id, String nome, int telefone, String username, String password, String role) {
         this.id = id;
         this.nome = nome;
-        this.telefne = telefne;
+        this.telefone = telefone;
         this.username = username;
         this.password = password;
         this.role = role;

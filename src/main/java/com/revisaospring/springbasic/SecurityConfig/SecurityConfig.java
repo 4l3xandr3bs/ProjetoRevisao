@@ -1,4 +1,4 @@
-package com.revisaospring.springbasic.SecrityConfig;
+package com.revisaospring.springbasic.SecurityConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,9 +26,9 @@ public class SecurityConfig {
                 .requestMatchers(
                     "/usuarioCTR/formCadastrarUsuario",
                     "/usuarioCTR/login",
-                    //"/usuarioCTR/salvarUsuario",
-                    //"/usuarioCTR/listarUsuarios",
-                    "/produtoCTR/**").permitAll()
+                    "/usuarioCTR/salvarUsuario",
+                    "/usuarioCTR/listarUsuarios", //add a comment in any of these if you want to enable or disable whatever the bank is going to do 
+                    "/produtoCTR/**").permitAll() //this one allows all methods to run, using the two asterisks, however its not recommended
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
