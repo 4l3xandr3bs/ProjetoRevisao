@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Cadastrar Usuario</title>
+</head>
+<body>
+    <h2>Cadastro de Produto</h2>
+
+<form th:action="@{/produtoCTR/salvarProduto}" th:object="${produto}" method="post">
+
+    <label>Nome:</label>
+    <input type="text" th:field="*{nome}" required />
+    <br><br>
+
+    <label>Valor:</label>
+    <input type="text" th:field="*{valor}" />
+    <br><br>
+
+    <label>Categoria:</label>
+    <input type="text" th:field="*{categoria}" required />
+    <br><br>
+
+    <button type="submit">Salvar/Alterar</button>
+
+</form>
+
+<br>
+
+<a th:href="@{/}"></a>
+
+</body>
+</html>
