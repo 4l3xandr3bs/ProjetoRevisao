@@ -40,7 +40,7 @@ public class UsuarioController {
     @GetMapping("/listarUsuarios")
     public String listarUsuarios(Model oModel) {
         oModel.addAttribute("usuarios", oUsuarioService.listarTodosUsuarios());
-        return "listarUsuarios";
+        return "listarUsuario";
     }
 
 }
